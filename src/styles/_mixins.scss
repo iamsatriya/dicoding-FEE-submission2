@@ -1,0 +1,12 @@
+@mixin mediaScreen ($media) {
+  @if $media==tablet {
+    @media screen and (min-width: 680px) {
+      @content;
+    }
+  }
+  @if $media==laptop {
+    @media screen and (min-width: 1000px) {
+      @content;
+    }
+  }
+}
